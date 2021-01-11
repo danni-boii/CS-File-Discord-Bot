@@ -21,8 +21,8 @@ To run the script on your own VPS.
 > Upload the files to a folder and run the `bot.py` at the background.
 
 
-Run the script at background.
-`python3 /path/to/the/folder/bot.py &`
+Run the script at background even exit the terminal.
+`nohup python3 /path/to/the/folder/bot.py &`
 
 To find the running process.
 `ps ax | grep bot.py`
