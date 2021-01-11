@@ -15,8 +15,11 @@ The bot is unfinished. So there is no instructions and guidelines yet.
 
 To run the script on your own VPS. 
 > Install `python3` and `pip` in your machine.
+
 > Use pip to install `discord.py`.
+
 > Upload the files to a folder and run the `bot.py` at the background.
+
 
 Run the script at background.
 `python3 /path/to/the/folder/bot.py &`
