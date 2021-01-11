@@ -1,0 +1,129 @@
+{
+    "roles_guide" : {
+        "ForensicScientist" : {
+            "en" : "As the game master, the Forensic Scientist holds the solution to the crime. They are responsible for assisting the Investigators in indentifying the \"Key Evidence\" and \"Means of Murder\". When an Investigator does that successfully, the crime is solved and the Forensic Scientist and the Investigators win the game.\n\n*During the game, the Forensic Scientist is NOT allowed to hint to the solution with words, gestures, or eyes.*",
+            "tw" : "鑑證專家是遊戲的主持，知曉兇案的「關鍵證物」及「行兇手法」負責協助細查員破案。只要其中一位調查員能正確指出「關鍵證物」 及「行兇手法」，即鑑證專家和一眾調查員能逮捕兇手，成功破案。 \n\n鑑證專家不可用言語、動作及眼神表情來提示兇案的內容。",
+            "id_url" : "http://leolook500.myds.me/photo/webapi/thumb.php?api=SYNO.PhotoStation.Thumb&method=get&version=1&size=large&id=photo_43532d46696c652f4964656e74697479_4964202d20202831292e6a7067&rotate_version=0&thumb_sig=2f766f6c756d65312f70686f746f2f43532d46696c652f4964656e746974792f4964202d20202831292e6a7067&mtime=1609607935&SynoToken=8mri6mefm9t61k9slgej5ng643",
+            "id_tw" : "鑑證專家"
+        },
+        "Investigator" : {
+            "en" : "To solve the crime, the Investigators must analyze the hints given by the Forensic Scientist. As long as one of the Investigators correctly identifies **both** the \"Key Evidence\" **and** the \"Means of Murder\".\n\nBear in mind that the Murderer (and sometimes other characters in the other team) is among the Investigators! The innocent Investigators must make a vigorous effort to defend themselves from false accusation.",
+            "tw" : "調查員必須分析鑑證專家的提示，以找出「關鍵證物」及「行兇手法」。只要有一名調查員正確指出「關鍵證物」及「行兇手法」 即能逮捕兇手，成功破案。 \n\n別忘了兇手（及幫兇）混入了調查員當中，為免成為代罪羔羊·調查員亦要盡力申辯自己清白。",
+            "id_url" : "http://leolook500.myds.me/photo/webapi/thumb.php?api=SYNO.PhotoStation.Thumb&method=get&version=1&size=large&id=photo_43532d46696c652f4964656e74697479_4964202d20202835292e6a7067&rotate_version=0&thumb_sig=2f766f6c756d65312f70686f746f2f43532d46696c652f4964656e746974792f4964202d20202835292e6a7067&mtime=1609607936&SynoToken=8mri6mefm9t61k9slgej5ng643",
+            "id_tw" : "調查員"
+        },
+        "Witness" : {
+            "en" : "The Witness is an optional role when playing with the Accomplice. The Witness is an Investigator who has witnessed the culprits leaving the crime scene. But, they have no way of knowing which one is the Murderer or which one is the Accomplice and they do not know how the crime was committed.\n\nIf the Murderer is arrested but can identify the Witness, the Witness is considered to be killed, allowing the Murderer team to get away and win the game.",
+            "tw" : "當遊戲加入了幫兇，才可以加入這人物。\n目擊者也是其中一名調查員，並剛好見到兇手一伙離開犯罪現場，因此知道誰屬兇手一伙，但不清楚誰是兇手，亦不知「關鍵證物」及「行兇手法」。\n\n如兇手被逮捕，只要他成功找出目擊者，目擊者即遭滅口。兇手一伙此時會趁亂逃走，逍遙法外。",
+            "id_url" : "http://leolook500.myds.me/photo/webapi/thumb.php?api=SYNO.PhotoStation.Thumb&method=get&version=1&size=large&id=photo_43532d46696c652f4964656e74697479_4964202d20202834292e6a7067&rotate_version=0&thumb_sig=2f766f6c756d65312f70686f746f2f43532d46696c652f4964656e746974792f4964202d20202834292e6a7067&mtime=1609607936&SynoToken=8mri6mefm9t61k9slgej5ng643",
+            "id_tw" : "目擊者"
+        },
+        "Murderer" : {
+            "en" : "When the crime takes place, the Murderer  chooses 1 Clue card and 1 Means card as the solution to the crime. These will be the \"Key Evidence\" and \"Means of Murder\" respectively.\n\nThe Murderer tries to hide their role and look for a scapegoat. Even if they are identified, the Murderer still wins the game if no one correctly identifies both the \"Key Evidence\" **and** the \"Means of Murder\".",
+            "tw" : "兇案發生時，兇手會選定白己面前的 1 張線索牌和 1 張手法脾，作為兇案的「關鍵證物」及「行兇手法」。 \n\n兇手儘量掩飾自己的身分，並設法找出代罪羔羊。即使已被認定是兇手，只要無人猜出「關鍵證物」及「行兇手法」，兇手還是會逍遙法外。",
+            "id_url" : "http://leolook500.myds.me/photo/webapi/thumb.php?api=SYNO.PhotoStation.Thumb&method=get&version=1&size=large&id=photo_43532d46696c652f4964656e74697479_4964202d20202832292e6a7067&rotate_version=0&thumb_sig=2f766f6c756d65312f70686f746f2f43532d46696c652f4964656e746974792f4964202d20202832292e6a7067&mtime=1609607935&SynoToken=8mri6mefm9t61k9slgej5ng643",
+            "id_tw" : "兇手"
+        },
+        "Accomplice" : {
+            "en" : "The Accomplice is an optional role for games with 6 or more players. The Accomplice knows who the Murderer is, as well as the solution to the crime. The Accomplice win if the Murderer gets away with the crime.",
+            "tw" : "遊戲人數達6人或以上時可加入幫兇。幫兇知曉兇手的身份，亦知道兇案的「關鍵證物」及「行兇手法」。他是兇手的同黨，當兇手逍遙法外時，他亦一同勝出遊戲。",
+            "id_url" : "http://leolook500.myds.me/photo/webapi/thumb.php?api=SYNO.PhotoStation.Thumb&method=get&version=1&size=large&id=photo_43532d46696c652f4964656e74697479_4964202d20202833292e6a7067&rotate_version=0&thumb_sig=2f766f6c756d65312f70686f746f2f43532d46696c652f4964656e746974792f4964202d20202833292e6a7067&mtime=1609607936&SynoToken=8mri6mefm9t61k9slgej5ng643",
+            "id_tw" : "幫兇"
+        },
+        "CurpitURL" : "http://leolook500.myds.me/photo/webapi/thumb.php?api=SYNO.PhotoStation.Thumb&method=get&version=1&size=large&id=photo_43532d46696c652f4964656e74697479_637572706974732e6a7067&rotate_version=0&mtime=1609921412&SynoToken=ga7s32hhf7vib8b2ooc4ablsi6"
+    },
+    "Background" : {
+        "en" : "In the neon-bathed city of Hong Kong, a grisly murder has taken place. You and your fellow Investigators arrive at the scene of the crime to discover that the culprit has left important clues. From among the suspicious objects scattered around, you must deduce the \"Means of Murder\" and identify the \"Key Evidence\" in order to catch and convict the killer.\n\nAs if solving a murder wasn't tricky enough, this one is complicated by the fact that the killer is among the Investigators! While the Forensic Scientist gives Investigators clues on what to look for, the Murderer attempts to sow confusion and doubt in order to cover their dark deed.\n\nWill the Investigators be perceptive enough to successfully solve the crime or will the culprit(s) accomplish the perfect crime and get away with murder? ",
+        "tw" : "在霓虹燈密佈的香港，今天發生了一索駭人的兇殺案。作為刑事調查員的你即時趕到犯案現場，與同儕合力發掘兇手留下的重要線索。你必須搜集散落在現場的可疑物品，盡快找出「關鎚證物」及「行兇手法」，以求緝拿兇徒歸案。\n\n然而，這可不是區區一宗普通的兇殺案。兇手竟是其中一名調查員!正當刑事鑑證專家努力提供重要資訊之時·兇手卻在混淆視購，誤導調查。\n\n大家能發揮想像力，合作推敲出兇手的真正身分，還是讓行兇者逍遙法外，達成完美犯罪？ "
+    },
+    "GameSetup" : {
+        "SceneSetup" : {
+            "en" : "Deal 4 Clue cards and 4 Means cards to each player. The players display their own 8 cards face up in front of themselves, with the texts and graphics facing the other players so they can all be seen. Players should take a moment to glance through all the Clue and Means cards on the table.\n\n***The graphics on the Clue and Means Cards are for reference only. Players should use their imagination based on the texts.*** ",
+            "tw" : "給每位玩家分發4張線索牌和4張手法牌。各人的卡牌必須按顏色分兩行排列在自己面前，牌面向上，文字和圖畫朝外，方使他人閱讀。各人然後檢視集面上所有的線索牌和手法牌。\n\n***線索牌和手法牌的圖片只供參考，玩家可按文字發揮想象力。***"
+        },
+        "RolesSetup" : {
+            "en" : "Take out a number of Role cards equal to the number of players:\n4 to 5-player game: 1 Murderer, 1 Forensic Scientist, all remaining: investigators\n6 to 12-player game: 1 Murderer, 1 Forensic Scientist, 1 Accomplice (optional), 1 Witness (optional), all remaining: Investigators\n\nReturn the unused Role cards to the game box. Shuffle the Role cards to be used and give one to each player face-down. The player receiving the Forensic Scientist card revea3i their identity and acts as the game master. They discard their Clue and Means cards and will play using the Scene tiles instead. All the other players keep their roles secret.\n***In your first game, it is recommended to assign the role of the \"Forensic Scientist\" to the most expressive player.***",
+            "tw" : "取出身分牌，數量與玩家人數相同：\n4-5人遊戲：兇手和鑑證專家各1張，其餘為調查員。\n6-12人遊戲：兇手、鑑證專家、幫兇和目擊者各1張，其餘為調查員。\n\n將多餘的身分牌放回盒中。覆轉洗勻需用的身分牌後，分發1張給每位玩家。拿到鑑證專家的玩家，將面前的線索牌和手法牌放回盒内、公開自己的身分牌並負責主持遊戲。\n除鑑證專家外，其它玩家必須對自己的身分保密。\n\n***初次遊戲時，可選表達力較強者擔任鑑證專家。***"
+        },
+        "BadgeSetup" : {
+            "en" : "Finally, give each player (except the Forensic Scientist) a badge token. This token indicates a player has not yet attempted to solve the crime and should be clearly displayed in front of the player. Return excess tokens to the box.",
+            "tw" : "除鑑證尊家外，各玩家拿取1個警章標記，放在自己面前的當眼位置，表明還未利用破案機會。將多餘的警章標記放回盒中。"
+        }
+    },
+    "Gameplay" : {
+        "TheCrime" : {
+            "en" : "During this portion of the game, the Murderer will select the solution to the crime by identifying the \"Means of Murder\" and \"Key Evidence\". The Forensic Scientist should run this portion of the game by following these steps:\n 1. The Forensic Scientist announces, \"Everyone, close your eyes,\" and confirms that all eyes are closed.\n    2. The Forensic Scientist announces, \"Murderer (and Accomplice), open your eyes,\" and confirms that they have done so.\n  3. The Forensic Scientist announces, \"Murderer, indicate the \"Key Evidence\" and \"Means of Murder.\" The Murderer then points to one of their Clue cards and one of their Means cards.\n 4. The Forensic Scientist gives the Murderer a nod of acknowledgement, at which point the Murderer can stop pointing, and then announces, \"Murderer (and Accomplice), close your eyes.\"\n 5. (Only if there is a Witness in the game) The Forensic Scientist then continues, \"Witness, open your eyes,\" and then indicates the Murderer and Accomplice by pointing to them. The Witness then gives a nod of acknowledgement, after which the Forensic Scientist announces, \"Witness, close your eyes.\"\n  6. The Forensic Scientist announces, \"Everyone, open your eyes.\"",
+            "tw" : "在這部分中，兇手會選出「關鍵證物」及「行兇手法」，作為破案關鍵。鑑證專家須按次序執行以下步驟：\n\n1. 鑑證專家宣布：「所有人合上眼睛」，然後確定所有人已閉眼。\n2. 鑑證專家宣布：「兇手、幫兇（如有）張開眼睛。」兇手、幫兇（如有）張開眼睛。\n3. 鑑證專家宣布：「兇手、請選定『關鍵證物』及『行兇手法』。」兇手用手指指出自己面前的1張線索牌和手法牌。\n4. 鑑證專家點頭確認清楚「關鍵證物」及「行兇手法」後，兇手收回手指。鑑證專家宣布：「兇手、幫兇（如有）合上眼睛。」\n5. 如遊戲沒有目擊者，略過這步跳到(6) 繼續。）鑑證專家宣布：「目擊者張開眼睛」，並用手指指出誰是兇手一伙。目擊者點頭確認後，鑑證專家再宣布：「目擊者合上眼睛」。\n6. 鑑證專家宣布：「所有入張開眼睛」。"
+        },
+        "Investigation" : {
+            "en" : "This is the main part of the game and is divided into 3 rounds - each round consists of an Evidence Collection phase and a Presentation phase. The game may end prematurely when any one of the Investigators correctly identifies the \"Key Evidence\" and \"Means of Murder\". Otherwise, the game ends after the third round has concluded. The phases occur in the following order:",
+            "tw" : "這部分為遊戲的主要環節，分成3個階段，每階段分「搜證」和「簡報」。如過程中有調査員成功破案，遊戲即時結束。否則，遊戲依次序完成以下3個階段後結束:",
+            "FirstRoundofEvidenceCollection" : {
+                "en" : "First Round of Evidence Collection To prepare for this round, the Forensic Scientist sets aside the tiles entitled \"Location of Crime\" and \"Cause of Death\". They then shuffle the remaining Scene tiles face down to form a draw deck.\n\nThe Forensic Scientist selects one of the set-aside \"Location of Crime\" tiles, draws 4 random Scene tiles from the draw deck, and displays these tiles, together with the \"Cause of Death\" one, in front of themself.",
+                "tw" : "為預備首次搜證，鑑證專家先從場景圖板中，分出所有「案發地點」和「死亡原因」，然讓將餘下的場景圖板覆轉洗混，作為圖板疊。\n鑑證專家從「案發地點」圖板中揀選出l張，再從圖板疊抽出4張， 連同「死亡原因」圖板，一併放在自己面前。",
+                "EvidenceCollection" : {
+                    "en" : "One at a time, the Forensic Scientist places each of the 6 Bullet markers on the tiles in front of them. Each marker must be placed on one of the six items Listed on the tile and only one marker may be placed on each tile. They can be placed as quickly or as slowly as the Forensic Scientist would like.\n\n**After the placement of the first marker, all players but the Forensic Scientist can freely discuss and express their opinions about the investigation. The Forensic Scientist places the subsequent markers based on the discussion, so as to narrow down the investigation. Therefore, the order in which the Forensic Scientist chooses to places the markers, as well as any signs of decisiveness or hesitancy on the part of the Forensic Scientist, can be clues. The markers can be placed in any order, but they cannot be repositioned once they have been placed.**\nThis step concludes as the sixth marker is placed.",
+                    "tw" : "在整個搜證過程，鑑證專家會將6個子彈標記，逐一放在面前的6張場景圖板上，速度可自行決定。每張埸景圖板上只可放1個子彈標記。子彈標記必須放在6個選項的其中一個之上。\n\n**放置首個子彈標記後，除鑑證專家外，各玩家可開始自由討論和發言。鑑證專家會依討論的内容再放子彈標記，以收窄調査範圍。因此，鑑證專家擺放子彈標記的次序和態度，如決斷或遲疑，皆可能是提示的一部份。鑑證專家可依任何次序擺放子彈標記。已放置的子彈標記不可移放別處。**\n\n放置第6個子彈標記後，這階段立即結束。"
+                },
+                "Presentation" : {
+                    "en" : "After the final marker has been placed, the Forensic Scientist should allow a brief period for discussion of the evidence and then ask each player to present their opinions about the crime. Starting with the player to the left of the Forensic Scientist and continuing clockwise, each player should present their opinions about the \"Key Evidence\" and \"Means of Murder.\" Each player may take about 30 seconds. (This is just a guideline. You may adjust the time limit as you see fit.)\n\n**The players are not allowed to interrupt or disturb the player making their Presentation, EXCEPT to make an attempt to \"Solve the Crime\". **",
+                    "tw" : "第6個子彈標記放置後，鑑證專家應先讓調查員稍稍討論案情，然後請調査員逐一簡單報吿：由鑑證專家左方的玩家開始，依順時針方向，各人逐一發表約30秒言論（玩家可自由調節時間長短）。玩家發言應圍繞「關鍵證物」和「行兇手法」。\n**除非玩家提出「我要破案！」，否則不可打斷或干擾別入發言。**"
+                }
+            },
+            "SecondRoundofEvidenceCollection" : {
+                "en" : "After each player has had a chance to present their opinions, the Forensic Scientist moves on to the second round of Evidence Collection.",
+                "tw" : "玩家完成第一次簡報後，第二次捜證開始。",
+                "EvidenceCollection" : {
+                    "en" : "The Forensic Scientist draws a new tile from the draw pile. This tile replaces one of the previously used Scene tiles except \"Location of Crime\" and \"Cause of Death\". To replace a tile, remove the marker and discard the tile. The newly drawn tile goes in the empty space and the Forensic Scientist places the previous marker on one of the six items listed on the new tile.",
+                    "tw" : "鑑證專家從圖板疊抽出1張新埸景圖板，取代面前的其中一張（「案發地點」和「死亡原因」除外）。取代方法：鑑證專家選定要取代的圖板，拿起上面的子彈標記，蓋上新的圖板，再重新放上子彈標記。"
+                },
+                "Presentation" : {
+                    "en" : "The Forensic Scientist should give the group a moment to discuss the new evidence before again calling on each player to present their opinions as in last rounds presentation.",
+                    "tw" : "鑑證專家應先讓調查員稍稍討論案情的新發展，然後如上回合簡報階段一樣，請調查員逐一簡報。"
+                }
+            },
+            "FinalRoundofEvidenceCollection" : {
+                "en" : "After each player has presented their opinions a second time, the Forensic Scientiist moves on to the final round of Evidence Collection.",
+                "tw" : "玩家完成第二次簡報後，最後搜證開始。",
+                "EvidenceCollection" : {
+                    "en" : "Repeat last ronuds evidence collection.",
+                    "tw" : "重覆上回合搜證階段。"
+                },
+                "Presentation" : {
+                    "en" : "Repeat last ronuds presentation.",
+                    "tw" : "重覆上回合簡報階段。"
+                },
+                "LastComment" : {
+                    "en" : "Important: The game ends immediately after the last player's third and final presentation.",
+                    "tw" : "最後一人結束最後簡報時，遊戲即吿結束。"
+                }
+            }
+        },
+        "SolvingtheCrime" : {
+            "en" : "Other than the Forensic Scientist, every player, including the Murderer (and the Accomplice) can make one single attempt to \"Solve the Crime\" at any time  during the game. To try to solve the crime, a player should announce, \"Let me Solve the Crime!\" That player then points to one Clue card and one Means card in front of another player.\nIf the cards chosen when a player attempts to solve the crime are the correct \"Key Evidence\" and \"Means of Murder\", the game ends immediately and the Forensic Scientist and Investigators (as well as the Witness) win.\n\nIf either of the cards is incorrect, the Forensic Scientist will only say \"No\" without giving any additional information.\n\nIf a player has attempted to solve the crime incorrectly, they must surrender their Badge token to the Forensic Scientist, indicating that they have used their one attempt to solve the crime. They continue to participate as normal and may still present during all Presentation phases but may not make another attempt to solve the crime.\n\n***Important: If you do not make an attempt to solve the crime before the last player's third and final Presentation, you will lose your chance to do so. Use it. Don't lose it!***",
+            "tw" : "除鑑證專家外，每名玩家（包括兇手和幫兇）皆有1次破案機會，可在「兇案調查」階段任何時刻提出。如要嘗試破案，玩家先要叫「我要破案!」，然後指著其中一位玩家面前的1張線索脾和1張手法牌。\n\n若玩家指出的卡牌正好是「關鍵證物」及「行兇手法」，遊戲結束。\n\n若玩家猜錯任何一張脾，鑑證專家只可回應說：「錯！」，而不可透露哪張牌猜錯了。遊戲繼續進行。\n\n猜錯的玩家將自己的警章標記交給鑑證專家，以示喪失破案機會，但除此仍可如常參與遊戲和發言。\n\n***最後一人結束最後簡報前，若有玩家尚未提出「我要破案!」，即代表喪失破案機會。請好好把握時機!***"
+        },
+        "ClosingtheFile" : {
+            "en" : "The game ends in one of the following conditions:\n 1. An. Investigator attempts to \"Solve the Crime\" and correctly chooses the \"Key Evidence\" and \"Means of Murder.\" In this case, the Forensic Scientist and Investigators (as well as the Witness) win the game!\n\n2. All players have lost their chance to solve the crime (either because they made an incorrect guess or did not attempt to \"Solve the Crime\" by the end of the third and final round of Presentation.) In this ease, the Murderer (and Accomplice) win the game.",
+            "tw" : "案件會根據結束的情況來分勝負。以下其中一項出現時，遊戲立即結束：\n1. 調查員提出「我要破案」時指出了「關鍵證物」及「行兇手法」，鑑證專家、調查真（及目擊者）成功破案並勝出！(成功「大逆轉」除外，見下文。)\n2. 所有玩家皆喪失破案機會（猜錯或在最後搜證結束討仍未提出「我要破案」），兇手（及幫兇）逍通法外並勝出。"
+        }
+    },
+    "Reversal" : {
+        "en" : "In a game with the Witness, a reversal to the end may take place. If the \"Key Evidence\" and \"Means of Murder\" are solved correctly, the Murderer, after dicussing with the Accomplice, picks a player (to have quietly killed before the trial). If the chosen player is the Witness, the Murderer and Accomplice escape conviction and win the game. If it is any player other than the Witness, they are convicted successfully and the Forensic Scientist and Investigators as well as the Witness win.",
+        "tw" : "大逆轉 遊戲如有目擊者，遊戲結局可能大逆轉!當有調查員正確指出「關鍵證物」及「行兇手法」，兇手及幫兇可相討將其中一人滅口。若能選中目擊者，兇手及幫兇便成功滅口並趁亂逃走，逆轉反勝。"
+    },
+    "Variants" : {
+        "Event Tiles" : {
+            "en" : "To play with the Event tiles, the Forensic Scientist should shuffle them into the deck of Scene tiles after the First Round of Evidence Collection. In this way, an event may occur during either the Second or Final Round of the game. When playing with the Event tiles, simply read the text aloud and follow the instructions when drawn.",
+            "tw" : "鑑證專家在第二次搜證開始前，將特別圖扳加入場景圖板，一併洗勻使用。如鑑證專家在第二和第三次搜證時抽到特別圖板，只須郎讀出其上的文字後，執行相關指示即可。"
+        },
+        "AdjustingtheDifficulty" : {
+            "en" : "Players may make the following changes to the rules to vary the level of difficulty:\n- To make the game easier for the Investigators, deal 3 Means cards and 3 Clue cards to each player.\n- To make the game harder for the Investigators, deal 5 Means cards and 5 Clue cards to each player.",
+            "tw" : "玩家可改動遊戲現則來調節遊戲難度:\n- 要讓調查員輕鬆一點，只給每位玩家派發3張手法脾和3張線索牌。\n- 為調查員增加挑戰性，可給每位玩家派發5張手法脾和5張線索牌。"
+        }
+    },
+    "GoldenRules" : {
+        "en" : "The restrictions on communication in the game are few:\n\n1. The Forensic Scientist may not convey information in any way other than through the placement of the Bullet markers on the Scene tiles and answering \"yes\" or \"no\" to an attempt to solve the crime.\n\n2. Players may not interrupt one another during the Presentation phases - except to attempt to Solve the Crime.\n\nDuring the Evidence Collection phases, players may speak freely. Asking questions of each other is permitted. Answering is optional.",
+        "tw" : "遊戲中玩家溝通方面的限制不多，規則如下：\n\n1. 鑑證專家除了放置子彈標記和以「對」或「錯」回應當試破案的玩家，並不能用任何方法港達其他資訊。 \n\n2. 玩家除了宣布「我要破案！」之外，不可在簡報期問打岔其他玩家的發言。 在搜證期問，玩家可白由發言。彼此提問亦可，但可自行選擇是否回答。"
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "events" : [
+        {
+            "name_en" : "A Good Twist",
+            "name_tw" : "扭轉局勢",
+            "content_en" : "The player who correctly solved the crime last game imediately receives a chance to do so. This does not count toward their 1 chance this game. If no player is entitled to this advantage, the Forensic Scientist discards this tile and draws another. Discard this event tile. ",
+            "content_tw" : "上局成功破案者可即時嘗試破案1次。這並不影響原來的破案機會。若無人獲得這額外的破案機會， 則鑑證專家另抽一張場景圖板。丟棄這特別圖板。",
+            "url" : "https://i.imgur.com/CYbYBP8.jpg"
+        },
+        {
+            "name_en" : "Countdown",
+            "name_tw" : "倒數計時",
+            "content_en" : "The Forensic Scientist draws 2 scene tiles and substitutes them for any 2 scene tiles in the display. The game ends after the following \"Presentation\" is finished.",
+            "content_tw" : "鑑證專家即時抽2張場景圖板，並取代桌面上的2張場景圖板。隨後的「簡報」步驟結束後，遊戲即告結束。",
+            "url" : "https://i.imgur.com/R0no4XB.jpg"
+        },
+        {
+            "name_en" : "Erroneous Information",
+            "name_tw" : "錯誤信息",
+            "content_en" : "The Forensic Scientist chooses 1 of the scene tiles on display, and moves its marker to a new item on the same tile. Discard this event tile. ",
+            "content_tw" : "鑑證專家揀選已翻開的一張場景圖版，拿起其上的標記，放在同一圖板的另一項目上。丟棄這特別圖板。",
+            "url" : "https://i.imgur.com/soHIMF0.jpg"
+        },
+        {
+            "name_en" : "The Perfect Crime",
+            "name_tw" : "完美犯案",
+            "content_en" : "Peek at the next tile. If it is another event tile you now win with the Murderer. If it is not an event tile, you win with the Investigators as normal In either case, place it aside face-down without revealing what you saw. Discard this event tile and draw an-other tile for this round of Evidence Collection. ",
+            "content_tw" : "可私下查看下一張圖板。如那是另一張特別圖板，你自此會跟兇手一同勝敗。若那不是特別圖板，你如常跟調查員一伙。你不能透露圖板的種類，將它覆轉放在一旁。丟棄這特別圖板後，再抽另一張圖版來進行這次「搜證」，然後才開始「簡報」。",
+            "url" : "https://i.imgur.com/YeS4UvG.jpg"
+        },
+        {
+            "name_en" : "Ruled Out Evidence",
+            "name_tw" : "證據排除",
+            "content_en" : "Each player must flip over 1 of their own Clue Card, removing it from consideration. This must be done without discus-sion. The murderer may not flip over the Key Evidence. (Take this action in counterclockwise order from the Foren-sic Scientist.) Discard this event tile. ",
+            "content_tw" : "從鑑護專家開始，依逆時針方向，每玩家輸流覆轉自己的其中1張線索牌，排除於考慮之外。過程不得商討。兇手不得覆轉 「關鍵證物」。丟棄這特別圖板。",
+            "url" : "https://i.imgur.com/93XKidz.jpg"
+        },
+        {
+            "name_en" : "A Useful Clue",
+            "name_tw" : "有據可尋",
+            "content_en" : "The Forensic Scientist draws 5 Scene tiles, from which they choose 1 to replace any existing tile in the display. The selected tile cannot be another event. Discard this event tile.",
+            "content_tw" : "鑑證專家抽5張場景圖板，揀選其中1張(特別圖板除外)，取代桌面上任何1張場景圖板。丟棄這特別圖板。",
+            "url" : "https://i.imgur.com/yItqSPs.jpg"
+        },
+        {
+            "name_en" : "Secret Testimony",
+            "name_tw" : "秘密證供",
+            "content_en" : "All players except the Forensic Scientist close their eyes. The witness then opens their eyes, points to a scene tile to eliminate, then closes their eyes. An players then open their eyes and the Forensic Scientist discards the indicated tile and replaces it with a random one. Discard this event tile. ",
+            "content_tw" : "除鑑證專家外，所有玩家閉上眼。目擊者張開眼，指出1張要移除的場景圖板，然後閉上眼。所有玩家張開眼，鑑證專家將那圖板丟棄，並抽新的補上。丟棄這特別圖板。",
+            "url" : "https://i.imgur.com/ewG9mvP.jpg"
+        }
+    ],
+    "event-BGurl" : "https://i.imgur.com/ryjJUT7.jpg"
+}

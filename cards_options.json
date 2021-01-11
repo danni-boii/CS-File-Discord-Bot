@@ -1,0 +1,346 @@
+{
+    "CauseOfDeath" : {
+        "string_en" : "Cause of Death",
+        "string_tw" : "死亡原因",
+        "url" : "https://i.imgur.com/A82Z9DW.jpg",
+        "BGurl" : "https://i.imgur.com/RrEjOhk.jpg",
+        "content" : [
+            "Suffocation 窒息",
+            "Severe Injury 重傷",
+            "Loss of Blood 失血",
+            "Illness/ Disease 病發",
+            "Poisoning 中毒",
+            "Accident 意外"
+        ]
+    },
+    "locationOC" : {
+        "string_en" : "Location of Crime",
+        "string_tw" : "案發地點",
+        "BGurl" : "https://i.imgur.com/S5zOkqT.jpg",
+        "1url" : "https://i.imgur.com/qPSnvcR.jpg",
+        "2url" : "https://i.imgur.com/Kp6mGYe.jpg",
+        "3url" : "https://i.imgur.com/dpUmzMV.jpg",
+        "4url" : "https://i.imgur.com/ogEIZeu.jpg",
+        "1" : [
+            "Playerground 操場",
+            "Classroom 課室",
+            "Dormitory 宿舍",
+            "Cafeteria 飯堂",
+            "Elevator 升降機",
+            "Toilet 廁所"
+        ],
+        "2" : [
+            "Vacation Home 別墅",
+            "Park 公園",
+            "Supermarket 超市",
+            "School 學校",
+            "Woods 樹林",
+            "Bank 銀行"
+        ],
+        "3" : [
+            "Pub 酒吧",
+            "Bookstore 書店",
+            "Restaurant 餐廳",
+            "Hotel 酒店",
+            "Hosipital 醫院",
+            "Building Site 地盤"
+        ],
+        "4" : [
+            "Living Room 客廳",
+            "Bedroom 睡房",
+            "Storeroom 儲物房",
+            "Bathroom 浴室",
+            "Kitchen 廚房",
+            "Balcony 露台"
+        ]
+    },
+    "Hints" :[
+        {
+            "string_en" : "Victim's Expression",
+            "string_tw" : "死者表情",
+            "url" : "https://i.imgur.com/OdeymY9.jpg",
+            "content" : [
+                "Peaceful 安詳",
+                "Struggling 掙扎",
+                "Frightened 恐懼",
+                "In Pain 痛苦",
+                "Blank 沒表情",
+                "Angry 憤怒"
+            ]
+        },
+        {
+            "string_en" : "Noticed By Bystander",
+            "string_tw" : "途人描述",
+            "url" : "https://i.imgur.com/bOB8b0i.jpg",
+            "content" : [
+                "Sudden Sound 聲音突響",
+                "Prolonged Sound 聲音長嗚",
+                "Smell 氣味",
+                "Visual 視像",
+                "Action 動態",
+                "Nothing 沒有特別"
+            ]
+        },
+        {
+            "string_en" : "In Progress",
+            "string_tw" : "進行事情",
+            "url" : "https://i.imgur.com/p1QcJEg.jpg",
+            "content" : [
+                "Entertainment 娛樂",
+                "Relaxation 休閒",
+                "Assembly 集會",
+                "Trading 交易",
+                "Visit 探訪",
+                "Dining 飯局"
+            ]
+        },
+        {
+            "string_en" : "Motive of Crime",
+            "string_tw" : "作案動機",
+            "url" : "https://i.imgur.com/Batj4MG.jpg",
+            "content" : [
+                "Hatrd 仇恨",
+                "Power 權力",
+                "Money 金錢",
+                "Love 情愛",
+                "Jealousy 妒忌",
+                "Justice 公義"
+            ]
+        },
+        {
+            "string_en" : "Trace At The Scene",
+            "string_tw" : "現場痕跡",
+            "url" : "https://i.imgur.com/IF3sKI3.jpg",
+            "content" : [
+                "Fingerprint 指紋",
+                "Footprint 腳印",
+                "Bruise 淤青",
+                "Blood Stain 血漬",
+                "Bodily Fluid 體液",
+                "Scar 傷痕"
+            ]
+        },
+        {
+            "string_en" : "Victim's Build",
+            "string_tw" : "死者體格",
+            "url" : "https://i.imgur.com/1LCTipr.jpg",
+            "content" : [
+                "Large 肥胖",
+                "Thin 瘦弱",
+                "Tall 高大",
+                "Short 矮小",
+                "Disfigured 崎形",
+                "Fit 強健"
+            ]
+        },
+        {
+            "string_en" : "Victim's Clothes",
+            "string_tw" : "死者衣著",
+            "url" : "https://i.imgur.com/0xzu2fu.jpg",
+            "content" : [
+                "Neat 整齊",
+                "Untidy 凌亂",
+                "Elegant 華麗",
+                "Shabby 破爛",
+                "Bizarre 奇特",
+                "Naked 裸體"
+            ]
+        },
+        {
+            "string_en" : "State Of The Scene",
+            "string_tw" : "現場狀況",
+            "url" : "https://i.imgur.com/fKs30ZO.jpg",
+            "content" : [
+                "Bits and Pieces 碎屑",
+                "Ashes 灰燼",
+                "Water Stain 水漬",
+                "Cracked 破裂",
+                "Disorderly 雜亂",
+                "Tidy 整齊"
+            ]
+        },
+        {
+            "string_en" : "Sudden Incident",
+            "string_tw" : "特發事件",
+            "url" : "https://i.imgur.com/Uuv3RTG.jpg",
+            "content" : [
+                "Power Failure 停電",
+                "Fire 起火",
+                "Conflict 爭執",
+                "Loss of Valuables 失竊",
+                "Scream 叫喊",
+                "Nothing 無"
+            ]
+        },
+        {
+            "string_en" : "Time Of Death",
+            "string_tw" : "死亡時間",
+            "url" : "https://i.imgur.com/3BkunNC.jpg",
+            "content" : [
+                "Dawn 黎明",
+                "Morning 上午",
+                "Noon 中午",
+                "Afternoon 下午",
+                "Evening 晚上",
+                "Night 午夜"
+            ]
+        },
+        {
+            "string_en" : "Victim's Occupation",
+            "string_tw" : "死者職業",
+            "url" : "https://i.imgur.com/BuvmLOz.jpg",
+            "content" : [
+                "Boss 老闆",
+                "Professional 專業人士",
+                "Worker 工人",
+                "Student 學生",
+                "Unemployed 無業",
+                "Retired 退休"
+            ]
+        },
+        {
+            "string_en" : "Victim's Identity",
+            "string_tw" : "死者身份",
+            "url" : "https://i.imgur.com/De9fVnu.jpg",
+            "content" : [
+                "Child 兒童",
+                "Young Adult 青年",
+                "Middle-Aged 中年",
+                "Senior 老人",
+                "Male 男人",
+                "Female 女人"
+            ]
+        },
+        {
+            "string_en" : "Murder Weapon",
+            "string_tw" : "兇器",
+            "url" : "https://i.imgur.com/bRfOH6j.jpg",
+            "content" : [
+                "Easily Accessible 唾手可得",
+                "Difficult to Acquire 難以獲取",
+                "Already at the Scene 遺留現場",
+                "Belonged to Killer 兇手之物",
+                "Unexpected 出人意表",
+                "Missing 找不到"
+            ]
+        },
+        {
+            "string_en" : "Duration of Crime",
+            "string_tw" : "作案時長",
+            "url" : "https://i.imgur.com/XYEAmcQ.jpg",
+            "content" : [
+                "Instantaneous 瞬間",
+                "Brief 短暫",
+                "Gradual 逐漸",
+                "Prolonged 漫長",
+                "Few Days 數日",
+                "Unclear 模糊"
+            ]
+        },
+        {
+            "string_en" : "Day of Crime",
+            "string_tw" : "案發日子",
+            "url" : "https://i.imgur.com/XVDHEfv.jpg",
+            "content" : [
+                "Weekday 周日",
+                "Weekend 周末",
+                "Spring 春天",
+                "Summer 夏天",
+                "Autumn 秋天",
+                "Winter 冬天"
+            ]
+        },
+        {
+            "string_en" : "Murderer's Personality",
+            "string_tw" : "兇手性格",
+            "url" : "https://i.imgur.com/1sI4duL.jpg",
+            "content" : [
+                "Arrogant 傲慢",
+                "Despicable 卑鄙",
+                "Furious 暴怒",
+                "Greedy 貪婪",
+                "Forceful 強硬",
+                "Perverted 變態"
+            ]
+        },
+        {
+            "string_en" : "Social Relationship",
+            "string_tw" : "社交關係",
+            "url" : "https://i.imgur.com/F1XzYza.jpg",
+            "content" : [
+                "Relatives 親戚",
+                "Friends 朋友",
+                "Colleagues 同事",
+                "Employer/ Empolyee 僱傭",
+                "Lovers 情侶",
+                "Strangers 陌生"
+            ]
+        },
+        {
+            "string_en" : "Evidence Left Behind",
+            "string_tw" : "遺留痕跡",
+            "url" : "https://i.imgur.com/L9qmU0B.jpg",
+            "content" : [
+                "Natural 自然的",
+                "Artistic 藝術的",
+                "Written 書寫的",
+                "Synthetic 人造的",
+                "Personal 個人的",
+                "Unrelated 不相關"
+            ]
+        },
+        {
+            "string_en" : "Weather",
+            "string_tw" : "天氣情況",
+            "url" : "https://i.imgur.com/iSwV8sl.jpg",
+            "content" : [
+                "Sunny 晴朗",
+                "Stormy 雷雨",
+                "Dry 乾燥",
+                "Humid 潮濕",
+                "Cold 寒冷",
+                "Hot 炎熱"
+            ]
+        },
+        {
+            "string_en" : "Hint On Corpse",
+            "string_tw" : "屍體疑點",
+            "url" : "https://i.imgur.com/mPomUKH.jpg",
+            "content" : [
+                "Head 頭部",
+                "Chest 胸部",
+                "Hand 手部",
+                "Leg 腿部",
+                "Partial 局部",
+                "All-over 全身"
+            ]
+        },
+        {
+            "string_en" : "Corpse Condition",
+            "string_tw" : "屍體狀況",
+            "url" : "https://i.imgur.com/Xm4FevQ.jpg",
+            "content" : [
+                "Still Warm 餘溫",
+                "Stiff 僵硬",
+                "Decayed 腐爛",
+                "Incomplete 殘缺",
+                "Intact 完整",
+                "Twisted 扭曲"
+            ]
+        },
+        {
+            "string_en" : "General Impression",
+            "string_tw" : "整體印象",
+            "url" : "https://i.imgur.com/avDwRQ6.jpg",
+            "content" : [
+                "Common 平常",
+                "Creative 創新",
+                "Fishy 蹺蹊",
+                "Cruel 殘忍",
+                "Horrible 恐怖",
+                "Suspenseful 懸疑"
+            ]
+        }
+    ],
+    "Hints-BG-url" : "https://i.imgur.com/ryjJUT7.jpg"
+}
