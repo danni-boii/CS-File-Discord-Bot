@@ -313,7 +313,7 @@ class GameCommand(commands.Cog):
         localPRL.append(Roles.Murderer(ctx, lucky_murderer.player, 'Murderer'))
         localPL.remove(lucky_murderer)
         # Accomplice only appears when there are more than 6 players
-        if(len(ori_playerlist) >= 6):   
+        if(len(ori_playerlist) >= 6):
             lucky_accomplice = random.choice(localPL)
             localPRL.append(Roles.Accomplice(ctx, lucky_accomplice.player, 'Accomplice'))
             localPL.remove(lucky_accomplice)
@@ -475,7 +475,7 @@ class GameCommand(commands.Cog):
         await self._showAllCard(ctx, 'False')    # Show the results to all the players
         #await self._endGame(ctx)
 
-    @commands.command(name = 'clearMessage', aliases=['clear'])
+    @commands.command(name = 'clearMessage', aliases=['clear', 'clr', 'cls'])
     async def _clearMessage(self, ctx):
         # Clear up the message by the bot in a text channel.
         def is_me(m):
@@ -484,7 +484,7 @@ class GameCommand(commands.Cog):
         deleted = await self.bot.purge_from(ctx.message.channel, limit=100, check=is_me)
         await self.bot.send_message(self.bot, 'Deleted {} message(s)'.format(len(deleted)))
 
-    @commands.command(name = 'forceJoin')
+    @commands.command(name = 'forceJoin', aliases=['forcejoin', 'fj'])
     async def _forceJoin(self, ctx, args):
         """This function forces a member to join the game, please do not add any bot into the game or it would get stuck."""
         try:
@@ -531,36 +531,40 @@ class GameCommand(commands.Cog):
                     await person.player.send(embed = embed)
                     
         # Tell the Accomplice and the murderer whos his teammate
-        Accomplice_player : Roles.Accomplice = self.findIdentity(player_rolelist, 'Accomplice')
-        Murderer_player : Roles.Murderer  = self.findIdentity(player_rolelist, 'Murderer')
-        embed = discord.Embed(title=f'The `Murderer` in this game is [{Murderer_player.getPlayerName()}]', description=f'As the Accomplice, you win if the Murderer gets away with the crime.', colour=int(jdata['Murderer_Team_Colour'],16))
-        embed.add_field(name=f'本場遊戲的 `兇手` 是 [{Murderer_player.getPlayerName()}]', value=f'你是兇手的同黨，當兇手逍遙法外時，你亦一同勝出遊戲。', inline=True)
-        embed.set_footer(text=f"犯罪現場-CS File @{ctx.guild.name}.{ctx.message.channel.name}") # maybe add an icon later
-        embed.set_image(url = Murderer_player.url)
+        try: # For identity thats not nessccessarssayly exist
+            Accomplice_player : Roles.Accomplice = self.findIdentity(player_rolelist, 'Accomplice')
+            Murderer_player : Roles.Murderer  = self.findIdentity(player_rolelist, 'Murderer')
+            embed = discord.Embed(title=f'The `Murderer` in this game is [{Murderer_player.getPlayerName()}]', description=f'As the Accomplice, you win if the Murderer gets away with the crime.', colour=int(jdata['Murderer_Team_Colour'],16))
+            embed.add_field(name=f'本場遊戲的 `兇手` 是 [{Murderer_player.getPlayerName()}]', value=f'你是兇手的同黨，當兇手逍遙法外時，你亦一同勝出遊戲。', inline=True)
+            embed.set_footer(text=f"犯罪現場-CS File @{ctx.guild.name}.{ctx.message.channel.name}") # maybe add an icon later
+            embed.set_image(url = Murderer_player.url)
+            
+            embed2 = discord.Embed(title=f'The `Accomplice` in this game is [{Accomplice_player.getPlayerName()}]', description=f'Try to cooperate with the accomplice to get away with the crime.', colour=int(jdata['Murderer_Team_Colour'],16))
+            embed2.add_field(name=f'本場遊戲的 `幫兇` 是 [{Accomplice_player.getPlayerName()}]', value=f'身為兇手，請你與幫兇合作以擺脫嫌疑。', inline=True)
+            embed2.set_footer(text=f"犯罪現場-CS File @{ctx.guild.name}.{ctx.message.channel.name}") # maybe add an icon later
+            embed2.set_image(url = Accomplice_player.url)
+            await Accomplice_player.player.send(embed = embed)
+            await Murderer_player.player.send(embed = embed2)
         
-        embed2 = discord.Embed(title=f'The `Accomplice` in this game is [{Accomplice_player.getPlayerName()}]', description=f'Try to cooperate with the accomplice to get away with the crime.', colour=int(jdata['Murderer_Team_Colour'],16))
-        embed2.add_field(name=f'本場遊戲的 `幫兇` 是 [{Accomplice_player.getPlayerName()}]', value=f'身為兇手，請你與幫兇合作以擺脫嫌疑。', inline=True)
-        embed2.set_footer(text=f"犯罪現場-CS File @{ctx.guild.name}.{ctx.message.channel.name}") # maybe add an icon later
-        embed2.set_image(url = Accomplice_player.url)
-        await Accomplice_player.player.send(embed = embed)
-        await Murderer_player.player.send(embed = embed2)
         
-        # Tell the witness whos the culprit
-        Witness_player : Roles.Witness = self.findIdentity(player_rolelist, 'Witness')
-        shufflelist = [Accomplice_player, Murderer_player]
-        random.shuffle(shufflelist)
-        embed3 = discord.Embed(title=f'The `culprits` in this game are [{shufflelist[0].getPlayerName()}] and [{shufflelist[1].getPlayerName()}]'
-                               , description=f'If the Murderer is arrested but can identify the Witness, the Witness is considered to be killed, allowing the Murderer team to get away and win the game. Please be careful.'
-                               , colour=int(jdata['Murderer_Team_Colour'],16))
-        embed3.add_field(name=f'本場遊戲的 `嫌疑人` 是 [{shufflelist[0].getPlayerName()}] and [{shufflelist[1].getPlayerName()}]'
-                         , value=f'如兇手被逮捕，只要他成功找出目擊者，目擊者即遭滅口。兇手一伙此時會趁亂逃走，逍遙法外，請多加留意。', inline=True)
-        embed3.set_footer(text=f"犯罪現場-CS File @{ctx.guild.name}.{ctx.message.channel.name}") # maybe add an icon later
-        embed3.set_image(url = Witness_player.curpitimg)
-        await Witness_player.player.send(embed = embed3)
+            # Tell the witness whos the culprit
+            Witness_player : Roles.Witness = self.findIdentity(player_rolelist, 'Witness')
+            shufflelist = [Accomplice_player, Murderer_player]
+            random.shuffle(shufflelist)
+            embed3 = discord.Embed(title=f'The `culprits` in this game are [{shufflelist[0].getPlayerName()}] and [{shufflelist[1].getPlayerName()}]'
+                                , description=f'If the Murderer is arrested but can identify the Witness, the Witness is considered to be killed, allowing the Murderer team to get away and win the game. Please be careful.'
+                                , colour=int(jdata['Murderer_Team_Colour'],16))
+            embed3.add_field(name=f'本場遊戲的 `嫌疑人` 是 [{shufflelist[0].getPlayerName()}] and [{shufflelist[1].getPlayerName()}]'
+                            , value=f'如兇手被逮捕，只要他成功找出目擊者，目擊者即遭滅口。兇手一伙此時會趁亂逃走，逍遙法外，請多加留意。', inline=True)
+            embed3.set_footer(text=f"犯罪現場-CS File @{ctx.guild.name}.{ctx.message.channel.name}") # maybe add an icon later
+            embed3.set_image(url = Witness_player.curpitimg)
+            await Witness_player.player.send(embed = embed3)
+        except:
+            pass
 
         if True:
-            await self.randomTilesToFS(ctx)
             await self.sendMurdererCard(ctx)
+            await self.randomTilesToFS(ctx)
         
     async def distributeCard(self, ctx):
         """To distribute clues and methods for each player"""
@@ -668,7 +672,14 @@ class GameCommand(commands.Cog):
 
     @commands.command(name = "testMD")
     async def sendMurdererCard(self, ctx, sendClues = True, sendMethods = True):
-        """This function send a private message for the murderer card pick"""
+        """
+        This function send a private message for the murderer card pick
+        
+        ### Parameters
+        -----
+        `sendClues` : When set to true, send the clues card privately to the murderer
+        `sendMethods`: When set to true, send the methods card privately to the murderer
+        """
         # Variables define
         emojis = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣' , '9️⃣']
         localPRL = self.guildDict[str(ctx.guild.id)][str(ctx.message.channel.id)]['player_rolelist']
@@ -717,7 +728,7 @@ class GameCommand(commands.Cog):
     async def murdererSelectClue(self, MM_message, clue_number : int, confirmed = False):
         """This function reacts to the murderer clue card picks
         
-        This function always call notifyAccompliceEvidence() when possible 
+        This function always call notifyAccompliceEvidence() when possible \\
         to notice Accomplice the murderer's evidence pick automatically.
         """
         if clue_number == -1: # User add an emoji irreleavent
@@ -738,7 +749,10 @@ class GameCommand(commands.Cog):
             new_info_tuple = (localDM[0], localDM[1], 'MD_M1_C', localDM[3])
             selected_clue = Murderer.getClueList()[localDM[3] - 1]  # This is the card picked
             Murderer.chosenClue = selected_clue
-            await self.notifyAccompliceEvidence(MM_message)
+            try:
+                await self.notifyAccompliceEvidence(MM_message)
+            except:
+                pass
         
         # Delete the old message
         await self.delOldMessageinCardlist(MM_message)
@@ -768,7 +782,7 @@ class GameCommand(commands.Cog):
     async def murdererSelectMethod(self, MM_message, method_number : int, confirmed = False):
         """This function reacts to the murderer method card picks
         
-        This function always call notifyAccompliceEvidence() when possible 
+        This function always call notifyAccompliceEvidence() when possible \\
         to notice Accomplice the murderer's evidence pick automatically.
         """
         if method_number == -1: # User add an emoji irreleavent
@@ -789,7 +803,10 @@ class GameCommand(commands.Cog):
             new_info_tuple = (localDM[0], localDM[1], 'MD_M2_C', localDM[3])
             selected_method = Murderer.getMethodList()[localDM[3] - 1]  # This is the card picked
             Murderer.chosenWeapon = selected_method
-            await self.notifyAccompliceEvidence(MM_message) # I dont want to await the task
+            try:    #Accomplice may not exact, may cause some issue
+                await self.notifyAccompliceEvidence(MM_message) # I dont want to await the task
+            except:
+                pass
 
         # Delete the old message
         await self.delOldMessageinCardlist(MM_message)
@@ -1024,7 +1041,11 @@ class GameCommand(commands.Cog):
             await self.notifyFSEvidence(message)
             
     async def notifyFSEvidence(self, message, ctx = None, revealToPublic = False):
-        """This function notify the Forensic Scientist what are the evidence picked by the murderer"""
+        """
+        This function notify the Forensic Scientist what are the evidence picked by the murderer
+        
+        But when the @param `revealToPublic` is set to true, the message will send to the public chat
+        """
         # Variables
         en = "name_en"
         tw = "name_tw"
@@ -1159,9 +1180,10 @@ class GameCommand(commands.Cog):
             await self.sendFSCard(ctx, 'hintCard', str(i))
     
     async def cardType(self, message : discord.message):
-        """Used to return the hints card type in stored in the bot dict
-        
-        # Return value meanings:
+        """
+        ### Used to return the hints card type in stored in the bot dict
+        -----
+        ### Return value meanings:
         
         'locCard': the location card selection message
         
