@@ -21,7 +21,7 @@ class GameCommand(commands.Cog):
         self.volunteerlist = []
         self.gamecardtuple = []
 
-        self.guildDict = {}
+        self.guildDict = {} 
         self.channelDict = {}
         self.dmchannellist = {}
 
@@ -31,11 +31,10 @@ class GameCommand(commands.Cog):
 
         self.UtilObj = CardData.UtilList()
         self.EveObj = CardData.EventList()
-        #self.usingWebhook = ''
 
-    ###
+    ########################
     # Events
-    ###
+    ########################
 
     @commands.Cog.listener()
     async def on_ready(self):
@@ -72,10 +71,10 @@ class GameCommand(commands.Cog):
                 await self.fSselectLoc(message, self.emojiToInt(emoji), False)
         elif cardtype == 'locCard_V':
             if emoji == '❌':
-                nowat_page = self.dmchannellist[str(message.id)][3]
+                nowAtPage = self.dmchannellist[str(message.id)][3]
                 ctx = await self.getDefaultCtx(message)
                 await self.delOldMessageinCardlist(message)
-                await self.sendFSCard(ctx, 'locCard', str(nowat_page))
+                await self.sendFSCard(ctx, 'locCard', str(nowAtPage))
             elif emoji == '✅':
                 await self.fSselectLoc(message, 0, True)
         elif cardtype == 'codCard':
@@ -91,9 +90,9 @@ class GameCommand(commands.Cog):
             await self.fSselectHint(message, self.emojiToInt(emoji), False)
         elif cardtype == 'hintCard_V':
             if emoji == '❌':
-                nowat_page = self.dmchannellist[str(message.id)][3]
+                nowAtPage = self.dmchannellist[str(message.id)][3]
                 ctx = await self.getDefaultCtx(message)
-                await self.sendFSCard(ctx, 'hintCard', str(nowat_page), message)
+                await self.sendFSCard(ctx, 'hintCard', str(nowAtPage), message)
                 await self.delOldMessageinCardlist(message)
             elif emoji == '✅':
                 await self.fSselectHint(message, 0, True)
@@ -123,9 +122,11 @@ class GameCommand(commands.Cog):
     @commands.command(name='startNewGame', aliases=['start', 'startnewgame'])
     async def _startNewGame(self, ctx):
         """
-        The game host start a new game
+        _startNewGame The game host start a new game
+        Initialize the parameters or do something related.
 
-        Initalize the parameters or do something related.
+        Args:
+            ctx ([discord.ext.commands.Context])
         """
         self.playerlist = []
         self.player_rolelist = []
@@ -155,7 +156,12 @@ class GameCommand(commands.Cog):
 
     @commands.command(name='endGame', aliases=['end', 'endgame'])
     async def _endGame(self, ctx):
-        """Force to end the game whenever this command is received."""
+        """
+        _endGame Force to end the game whenever this command is received.
+
+        Args:
+            ctx ([discord.ext.commands.Context])
+        """
         # Clear all the data in that specific guild text channel
         self.playerlist = []
         self.player_rolelist = []
@@ -176,7 +182,7 @@ class GameCommand(commands.Cog):
         try:
             localPL = self.guildDict[str(ctx.guild.id)][str(
                 ctx.message.channel.id)]['playerlist']
-            find_player = self.checkUserinIdList(
+            find_player = self.checkUserInIdList(
                 ctx.message.author, localPL, ctx)
             if find_player in localPL:   # If the user has not joined yet, you can comment out this 2 line to test the game easier
                 self.guildDict[str(ctx.guild.id)][str(
@@ -201,7 +207,7 @@ class GameCommand(commands.Cog):
                 ctx.message.channel.id)]['playerlist']
             localVL = self.guildDict[str(ctx.guild.id)][str(
                 ctx.message.channel.id)]['volunteerlist']
-            find_player = self.checkUserinIdList(
+            find_player = self.checkUserInIdList(
                 ctx.message.author, localPL, ctx)
             if(find_player not in localPL):
                 # This user is being naughty, just ignore him/her
@@ -250,7 +256,7 @@ class GameCommand(commands.Cog):
                 ctx.message.channel.id)]['playerlist']
             localVL = self.guildDict[str(ctx.guild.id)][str(
                 ctx.message.channel.id)]['volunteerlist']
-            find_player = self.checkUserinIdList(
+            find_player = self.checkUserInIdList(
                 ctx.message.author, self.volunteerlist, ctx)
             if(find_player not in localPL):
                 await self._joinGame(ctx)   # Force the player to join the game
@@ -265,7 +271,7 @@ class GameCommand(commands.Cog):
         try:
             localVL = self.guildDict[str(ctx.guild.id)][str(
                 ctx.message.channel.id)]['volunteerlist']
-            find_player = self.checkUserinIdList(
+            find_player = self.checkUserInIdList(
                 ctx.message.author, localVL, ctx)
             if(find_player in localVL):
                 localVL.remove(find_player)
@@ -387,8 +393,8 @@ class GameCommand(commands.Cog):
             localPRL = self.guildDict[str(ctx.guild.id)][str(
                 ctx.message.channel.id)]['player_rolelist']
 
-            if self.checkUserinIdList(sp_user, localPRL, ctx, True):
-                person = self.checkUserinIdList(sp_user, localPRL, ctx)
+            if self.checkUserInIdList(sp_user, localPRL, ctx, True):
+                person = self.checkUserInIdList(sp_user, localPRL, ctx)
             else:
                 # find_user not playing the game.
                 return
@@ -462,7 +468,7 @@ class GameCommand(commands.Cog):
 
     @commands.command(name='drawRandomScenes', aliases=['drawScene', 'drawscene', 'drawScenes', 'drawscenes'])
     async def _drawRandomScenes(self, ctx):
-        """Draw an scene tile on command. In this version, the tiles might repeat itselfs."""
+        """Draw an scene tile on command. In this version, the tiles might repeat itself."""
         try:
             localPRL = self.guildDict[str(ctx.guild.id)][str(
                 ctx.message.channel.id)]['player_rolelist']
@@ -476,7 +482,7 @@ class GameCommand(commands.Cog):
 
     @commands.command(name="drawEvents", aliases=["drawevent", 'drawevents', 'drawrandomevent'])
     async def _drawEvents(self, ctx):
-        """Draw an event tile on command. In this version, the tiles might repeat itselfs."""
+        """Draw an event tile on command. In this version, the tiles might repeat itself."""
         # try:
         localPRL = self.guildDict[str(ctx.guild.id)][str(
             ctx.message.channel.id)]['player_rolelist']
@@ -538,7 +544,7 @@ class GameCommand(commands.Cog):
             if find_user != None:
                 if(find_user.bot == True):
                     return
-                thisplayer = self.checkUserinIdList(find_user, localPL, ctx)
+                thisplayer = self.checkUserInIdList(find_user, localPL, ctx)
                 # If the user has not joined yet, you can comment out this 2 line to test the game easier
                 if(thisplayer in localPL):
                     localPL.remove(thisplayer)
@@ -591,8 +597,8 @@ class GameCommand(commands.Cog):
                     embed.set_image(url=person.url)
                     await person.player.send(embed=embed)
 
-        # Tell the Accomplice and the murderer whos his teammate
-        try:  # For identity thats not nessccessarssayly exist
+        # Tell the Accomplice and the murderer who's his teammate
+        try:  # For identity thats not necessarily exist
             Accomplice_player: Roles.Accomplice = self.findIdentity(
                 player_rolelist, 'Accomplice')
             Murderer_player: Roles.Murderer = self.findIdentity(
@@ -1429,7 +1435,7 @@ class GameCommand(commands.Cog):
     # Non async required functions
     ###
 
-    def checkUserinIdList(self, user, Idlist, ctx='', returnBool=False):
+    def checkUserInIdList(self, user, Idlist, ctx='', returnBool=False):
         """Check if the user are already in the list, return the user_identity object if found"""
         for person in Idlist:
             if(person.player == user and person.guildId == ctx.guild.id and person.textChannelId == ctx.message.channel):
@@ -1450,7 +1456,15 @@ class GameCommand(commands.Cog):
         return None  # On not found
 
     def emojiToInt(self, emoji):
-        """This function converts the number emojis into an integer"""
+        """
+        emojiToInt This function converts the number emojis into an integer
+
+        Args:
+            emoji ([string])
+
+        Returns:
+            [int]
+        """
         if emoji == '1️⃣':
             return 1
         elif emoji == '2️⃣':

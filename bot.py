@@ -12,12 +12,12 @@
 
 --  > Gamerules
     > No join and leave mid-game
-----> The bot should store the varaiables in json file according to the guild.id@channel.id (Trickly solved)
+----> The bot should store the variables in json file according to the guild.id@channel.id (Trickly solved)
 ----> When game start. A text box will be sent to determine the identity of each person.    (Need to turn into private)
 ----> Everyone will know their identity first. Revealing each other’s clues and methods.
 ----> Special identity messages. 
 ----> The murderer select what card he want to pick as the answer. 
-----> Accomplice and FS will know what murderer choose as the anwser
+----> Accomplice and FS will know what murderer choose as the answer
 ----> The FS will then arrange the order of hints and try to guide the investigator toward the correct answer. 
     > Day time message box
 ----> Investigators can always browse each other’s clue and method by a command. 
@@ -25,7 +25,7 @@
     > !!! During night time, draw and do the events card (Not done by the bot now)
     > If all the investigator ran out out police badge, the murderer team wins. (Not done by the bot now)
     > If the investigators pointed out the correct answers, but the murderer pointed out the correct witness, the murderer team wins. (Not done by the bot now)
-----> Game end data wape
+----> Game end data wipe
     > Permission check for game master 
 """
 
@@ -43,6 +43,12 @@ def get_prefix(bot, message):
     with open('prefixes.json', 'r') as f:
         prefixes = json.load(f)
     return prefixes[str(message.guild.id)]
+
+def get_lang(bot, message):
+    with open('defaultLanguage.json', 'r') as f:
+        lang = json.load(f)
+    return lang[str(message.guild.id)]
+    
 
 intents = discord.Intents.default() # Allow fetching member list easier
 intents.members = True

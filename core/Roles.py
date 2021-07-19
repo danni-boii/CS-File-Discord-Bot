@@ -10,7 +10,6 @@ Contains different identity of the game [CS File]
 
 import json
 
-jdata = ''
 with open('game_dialog.json', 'r', encoding='utf8') as jfile:
     jdata = json.load(jfile)
 
